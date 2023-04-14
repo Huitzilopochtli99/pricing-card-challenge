@@ -21,8 +21,8 @@ p {
 }
 
 #card {
-  height: 65vh;
-  width: 90vw;
+  height: 400px;
+  width: 500px;
   box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.38);
   border-radius: 6px;
   overflow: hidden;
@@ -127,4 +127,12 @@ p {
   list-style: none;
   opacity: 0.8;
   font-size: 0.8rem;
+}
+
+@media (max-width: 540px) 
+{
+  #bottom-left-section, #bottom-right-section, #card {
+           width: 100%;
+           height: auto;
+}
 }
