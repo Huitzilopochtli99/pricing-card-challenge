@@ -50,15 +50,16 @@ p {
 }
 
 #bottom-section {
+  display: flex;
+  flex-direction: row;
   color: #ffffff;
   height: 55%;
   width: 100%;
 }
 
 #bottom-left-section {
-  display: inline-block;
+  flex-basis: 50%;
   height: 100%;
-  width: 50%;
   vertical-align: top;
   background-color: #2ab2af;
   padding: 25px;
@@ -114,11 +115,10 @@ p {
 }
 
 #bottom-right-section {
-  display: inline-block;
+  flex-basis: 50%;
   height: 100%;
-  width: 50%;
   vertical-align: top;
-  background-color: #2EBFBD;
+  background-color: #2ebfbd;
   padding: 25px;
 }
 
@@ -129,10 +129,12 @@ p {
   font-size: 0.8rem;
 }
 
-@media (max-width: 540px) 
-{
-  #bottom-left-section, #bottom-right-section, #card {
-           width: 100%;
-           height: auto;
-}
+@media (max-width: 548px) {
+  #card {
+    width: 100%;
+    height: auto;
+  }
+  #bottom-section {
+    flex-direction: column;
+  }
 }
